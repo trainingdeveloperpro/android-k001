@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tSizeBig">40sp</dimen>
+    <dimen name="wBigEditText">250dp</dimen>
+    <dimen name="hBigEditText">60dp</dimen>
+    <dimen name="bigSpace">60dp</dimen>
+    <dimen name="smallSpace">40dp</dimen>
+    <dimen name="wFirstTime">200dp</dimen>
+    <dimen name="hFirstTime">25dp</dimen>
+    <dimen name="tSizeSmall">25sp</dimen>
+    <dimen name="wButton">80dp</dimen>
+    <dimen name="hButton">50dp</dimen>
+    <dimen name="paddings">10dp</dimen>
+</resources>

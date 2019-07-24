@@ -6,10 +6,10 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.0"
+    buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "com.trainingdeveloperpro.androidk001"
-        minSdkVersion 15
+        applicationId "com.trainingdeveloperpro.androidk001.lesson3.nguyenquockhanh"
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"

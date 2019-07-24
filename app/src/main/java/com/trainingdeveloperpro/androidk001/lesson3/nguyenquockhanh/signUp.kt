@@ -1,27 +1,25 @@
 package com.trainingdeveloperpro.androidk001.lesson3.nguyenquockhanh
 
-import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
-import android.view.View
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
 
-class MainActivity : AppCompatActivity() {
-    private val TAG : String = "MyActivity"
+class signUp : AppCompatActivity() {
+val TAG : String = "MyActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_sign_up)
         supportActionBar?.hide()
         if (Build.VERSION.SDK_INT >= 21) {
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            getWindow().statusBarColor = ContextCompat.getColor(this, R.color.colorMain)
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.colorAccent));
         }
         Log.v(TAG, "App created")
     }
-
     override fun onStart() {
         super.onStart()
         Log.v(TAG, "App starting")
@@ -52,9 +50,8 @@ class MainActivity : AppCompatActivity() {
         Log.v(TAG, "App destroyed")
     }
 
-    fun signIn(view:View){
-        val intent = Intent(this, signUp::class.java)
-        startActivity(intent)
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        super.onSaveInstanceState(outState, outPersistentState)
     }
 
 }
