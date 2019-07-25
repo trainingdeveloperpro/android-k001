@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LoginApplication2</string>
+    <string name="login_title">LOG IN</string>
+    <string name="register_email_text">Email</string>
+    <string name="register_password_text">Password</string>
+    <string name="login_button_text">LOG IN</string>
+    <string name="login_button_create_account_text">+</string>
+    <string name="register_title">REGISTER</string>
+    <string name="register_first_name_text">First Name</string>
+    <string name="register_last_name_text">Last Name</string>
+    <string name="register_button_create_account">CREATE ACCOUNT</string>
+</resources>
