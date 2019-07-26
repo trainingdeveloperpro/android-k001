@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nghich</string>
+    <string name="register">REGISTER</string>
+    <string name="login">LOG IN</string>
+</resources>
