@@ -21,13 +21,13 @@ const val BUNDLE_STATE_PASSWORD = "PASSWORD"
 class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.v(TAG, "onCreate() called")
+        DebugLog.logV(TAG, "onCreate() called")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
         supportActionBar?.hide()
 
         if (savedInstanceState != null) {
-            Log.v(TAG, "Loading saved Instance state")
+            DebugLog.logV(TAG, "Loading saved Instance state")
 
             edittext_register_first_name.setText(savedInstanceState.getString(BUNDLE_STATE_FIRST_NAME, ""))
             Log.d(TAG, BUNDLE_STATE_FIRST_NAME + savedInstanceState.getString(BUNDLE_STATE_FIRST_NAME, ""))
@@ -45,7 +45,7 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        Log.v(TAG, "onSaveInstanceState() called")
+        DebugLog.logV(TAG, "onSaveInstanceState() called")
 
         outState.putString(BUNDLE_STATE_FIRST_NAME, edittext_register_first_name.text.toString())
         outState.putString(BUNDLE_STATE_LAST_NAME, edittext_register_last_name.text.toString())
@@ -55,7 +55,7 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.v(TAG, "onDestroy() called")
+        DebugLog.logV(TAG, "onDestroy() called")
     }
 
     fun register(view: View) {

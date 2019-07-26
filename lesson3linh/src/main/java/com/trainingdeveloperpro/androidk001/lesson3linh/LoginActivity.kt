@@ -18,50 +18,50 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        Log.v(TAG, "onCreate() called")
+        DebugLog.logV(TAG, "onCreate() called")
 
         supportActionBar?.hide()
     }
 
     override fun onStart() {
         super.onStart()
-        Log.v(TAG, "onStart() called")
+        DebugLog.logV(TAG, "onStart() called")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.v(TAG, "onRestart() called")
+        DebugLog.logV(TAG, "onRestart() called")
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        Log.v(TAG, "onRestoreInstanceState() called")
+        DebugLog.logV(TAG, "onRestoreInstanceState() called")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.v(TAG, "onResume() called")
+        DebugLog.logV(TAG, "onResume() called")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.v(TAG, "onPause() called")
+        DebugLog.logV(TAG, "onPause() called")
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        Log.v(TAG, "onSaveInstanceState() called")
+        DebugLog.logV(TAG, "onSaveInstanceState() called")
 
     }
 
     override fun onStop() {
         super.onStop()
-        Log.v(TAG, "onStop() called")
+        DebugLog.logV(TAG, "onStop() called")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.v(TAG, "onDestroy() called")
+        DebugLog.logV(TAG, "onDestroy() called")
     }
 
     fun login(view: View) {
