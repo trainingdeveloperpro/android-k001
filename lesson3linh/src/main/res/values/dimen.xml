@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <!--Padding-->
+    <dimen name="padding_login_relative_layout_side">32dp</dimen>
+    <dimen name="padding_login_relative_layout_top">64dp</dimen>
+    <dimen name="padding_all_button_sides">32dp</dimen>
+
+    <!--Text size-->
+    <dimen name="text_size_all_title_medium">24sp</dimen>
+    <dimen name="text_size_all_label_medium">14sp</dimen>
+    <dimen name="text_size_login_create_account_button">32sp</dimen>
+
+    <!--Margin-->
+    <dimen name="margin_all_blocks">32sp</dimen>
+    <dimen name="margin_login_create_account_button_bottom">50dp</dimen>
+
+    <!--Radius-->
+    <dimen name="radius_all_button">8dp</dimen>
+    <dimen name="radius_all_circle_button">90dp</dimen>
+
+    <!--Size-->
+    <dimen name="size_all_circle_button">60dp</dimen>
+
+    <!--Width-->
+    <dimen name="width_all_button_border">1dp</dimen>
+</resources>
