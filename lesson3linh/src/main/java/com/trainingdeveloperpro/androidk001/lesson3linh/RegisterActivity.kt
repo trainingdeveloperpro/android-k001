@@ -8,7 +8,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_register.*
 
-private const val TAG = "RegisterActivity"
+private val TAG = RegisterActivity::class.java.simpleName
 
 const val EXTRA_USER_EMAIL = "com.trainingdeveloperpro.androidk001.lesson3linh.USER_EMAIL"
 const val EXTRA_USER_PASSWORD = "com.trainingdeveloperpro.androidk001.lesson3linh.USER_PASSWORD"

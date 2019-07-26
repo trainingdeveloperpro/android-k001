@@ -1,10 +1,17 @@
 <resources>
+    <!--App-->
     <string name="app_name">LoginApplication2</string>
+
+    <!--LoginActivity-->
     <string name="login_title">LOG IN</string>
-    <string name="register_email_text">Email</string>
-    <string name="register_password_text">Password</string>
     <string name="login_button_text">LOG IN</string>
     <string name="login_button_create_account_text">+</string>
+    <string name="login_dialog_message">Email: %1$s\nPassword: %2$s</string>
+    <string name="login_dialog_title">Logging in&#8230;</string>
+
+    <!--RegisterActivity-->
+    <string name="register_email_text">Email</string>
+    <string name="register_password_text">Password</string>
     <string name="register_title">REGISTER</string>
     <string name="register_first_name_text">First Name</string>
     <string name="register_last_name_text">Last Name</string>
