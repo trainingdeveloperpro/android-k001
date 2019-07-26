@@ -3,13 +3,12 @@ package com.trainingdeveloperpro.androidk001.lesson3linh
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
-private const val TAG = "LoginActivity"
+private val TAG = LoginActivity::class.java.simpleName
 private const val CREATE_ACCOUNT_REQUEST = 1
 
 class LoginActivity : AppCompatActivity() {
@@ -18,50 +17,50 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        Log.v(TAG, "onCreate() called")
+        DebugLog.logV(TAG, "onCreate() called")
 
         supportActionBar?.hide()
     }
 
     override fun onStart() {
         super.onStart()
-        Log.v(TAG, "onStart() called")
+        DebugLog.logV(TAG, "onStart() called")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.v(TAG, "onRestart() called")
+        DebugLog.logV(TAG, "onRestart() called")
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        Log.v(TAG, "onRestoreInstanceState() called")
+        DebugLog.logV(TAG, "onRestoreInstanceState() called")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.v(TAG, "onResume() called")
+        DebugLog.logV(TAG, "onResume() called")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.v(TAG, "onPause() called")
+        DebugLog.logV(TAG, "onPause() called")
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        Log.v(TAG, "onSaveInstanceState() called")
+        DebugLog.logV(TAG, "onSaveInstanceState() called")
 
     }
 
     override fun onStop() {
         super.onStop()
-        Log.v(TAG, "onStop() called")
+        DebugLog.logV(TAG, "onStop() called")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.v(TAG, "onDestroy() called")
+        DebugLog.logV(TAG, "onDestroy() called")
     }
 
     fun login(view: View) {
@@ -69,8 +68,15 @@ class LoginActivity : AppCompatActivity() {
             AlertDialog.Builder(it)
         }
 
-        builder.setMessage("Email: ${edittext_register_email.text}\n Password: ${edittext_register_password.text}")
-            ?.setTitle("Logging in...")
+//        builder.setMessage("Email: ${edittext_register_email.text}\n Password: ${edittext_register_password.text}")
+        builder.setMessage(
+            getString(
+                R.string.login_dialog_message,
+                edittext_register_email.text,
+                edittext_register_password.text
+            )
+        )
+            ?.setTitle(getString(R.string.login_dialog_title))
         builder.create()?.show()
     }
 
