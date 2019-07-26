@@ -19,37 +19,37 @@ class MainActivity : AppCompatActivity() {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             getWindow().statusBarColor = ContextCompat.getColor(this, R.color.colorMain)
         }
-        Log.v(TAG, "App created")
+        DebugLog.logD(TAG, "created")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.v(TAG, "App starting")
+        DebugLog.logD(TAG, "started")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.v(TAG, "App resuming")
+        DebugLog.logD(TAG, "resumed")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.v(TAG, "App paused")
+        DebugLog.logD(TAG, "paused")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.v(TAG, "App restarted")
+        DebugLog.logD(TAG, "restarted")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.v(TAG, "App stopping")
+        DebugLog.logD(TAG, "stopped")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.v(TAG, "App destroyed")
+        DebugLog.logD(TAG, "destroyed")
     }
 
     fun signIn(view:View){

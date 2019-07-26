@@ -7,20 +7,20 @@
         android:background="@drawable/sign_in_back">
 
     <TextView
-            android:id="@+id/tvReg"
+            android:id="@+id/headRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_signUp"
-            android:textSize="@dimen/tSizeBig"
+            android:textSize="@dimen/textBigSize"
             android:textColor="@android:color/white"
             android:gravity="center_horizontal"
     />
     <EditText
-            android:id="@+id/et_fName"
+            android:id="@+id/edit_text_firstName"
             android:inputType="textPersonName"
-            android:layout_width="@dimen/wBigEditText"
-            android:layout_height="@dimen/hBigEditText"
-            android:layout_below="@id/tvReg"
+            android:layout_width="@dimen/width_bigEditText"
+            android:layout_height="@dimen/height_bigEditText"
+            android:layout_below="@id/headRegister"
             android:layout_centerHorizontal="true"
             android:hint="@string/text_firstName"
             android:textColorHint="@android:color/white"
@@ -28,11 +28,11 @@
             android:layout_marginTop="@dimen/smallSpace"
     />
     <EditText
-            android:id="@+id/et_lName"
+            android:id="@+id/edit_text_lastName"
             android:inputType="textPersonName"
-            android:layout_width="@dimen/wBigEditText"
-            android:layout_height="@dimen/hBigEditText"
-            android:layout_below="@id/et_fName"
+            android:layout_width="@dimen/width_bigEditText"
+            android:layout_height="@dimen/height_bigEditText"
+            android:layout_below="@id/edit_text_firstName"
             android:layout_centerHorizontal="true"
             android:hint="@string/text_lastName"
             android:textColorHint="@android:color/white"
@@ -40,11 +40,11 @@
             android:layout_marginTop="@dimen/smallSpace"
     />
     <EditText
-            android:id="@+id/et_email"
+            android:id="@+id/registerEmail"
             android:inputType="textEmailAddress"
-            android:layout_width="@dimen/wBigEditText"
-            android:layout_height="@dimen/hBigEditText"
-            android:layout_below="@id/et_lName"
+            android:layout_width="@dimen/width_bigEditText"
+            android:layout_height="@dimen/height_bigEditText"
+            android:layout_below="@id/edit_text_lastName"
             android:layout_centerHorizontal="true"
             android:hint="@string/text_email"
             android:textColorHint="@android:color/white"
@@ -52,11 +52,11 @@
             android:layout_marginTop="@dimen/smallSpace"
     />
     <EditText
-            android:id="@+id/ed_pass"
+            android:id="@+id/registerPass"
             android:inputType="textPassword"
-            android:layout_width="@dimen/wBigEditText"
-            android:layout_height="@dimen/hBigEditText"
-            android:layout_below="@id/et_email"
+            android:layout_width="@dimen/width_bigEditText"
+            android:layout_height="@dimen/height_bigEditText"
+            android:layout_below="@id/registerEmail"
             android:layout_centerHorizontal="true"
             android:hint="@string/text_pass"
             android:textColorHint="@android:color/white"
@@ -65,14 +65,14 @@
     />
     <Button
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/hButton"
-            android:layout_below="@id/ed_pass"
+            android:layout_height="@dimen/height_button"
+            android:layout_below="@id/registerPass"
             android:background="@drawable/btn_border"
             android:text="@string/text_reg"
             android:textColor="@android:color/white"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/smallSpace"
-            android:paddingRight="@dimen/paddings"
-            android:paddingLeft="@dimen/paddings"
+            android:paddingRight="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
     />
 </RelativeLayout>
