@@ -9,7 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="com.trainingdeveloperpro.androidk001.lesson3.nguyenquockhanh.signUp"
+        <activity android:name="com.trainingdeveloperpro.androidk001.lesson3.nguyenquockhanh.SignUp"
                     android:parentActivityName=".MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"

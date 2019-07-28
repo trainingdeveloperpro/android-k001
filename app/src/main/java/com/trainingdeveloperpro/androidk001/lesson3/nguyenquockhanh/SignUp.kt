@@ -8,8 +8,8 @@ import android.util.Log
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
 
-class signUp : AppCompatActivity() {
-val TAG : String = "MyActivity"
+class SignUp : AppCompatActivity() {
+private const val TAG : String = "MyActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)

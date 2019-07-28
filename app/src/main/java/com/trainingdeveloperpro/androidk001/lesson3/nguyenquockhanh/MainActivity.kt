@@ -4,13 +4,11 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
-
+private const val TAG : String = "MyActivity"
 class MainActivity : AppCompatActivity() {
-    private val TAG : String = "MyActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -53,7 +51,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun signIn(view:View){
-        val intent = Intent(this, signUp::class.java)
+        val intent = Intent(this, SignUp::class.java)
         startActivity(intent)
     }
 
