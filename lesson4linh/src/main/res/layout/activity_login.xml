@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_height="match_parent"
+                                                   android:layout_width="match_parent"
+                                                   android:background="@drawable/login"
+                                                   android:paddingTop="@dimen/padding_login_relative_layout_top"
+                                                   android:paddingLeft="@dimen/padding_login_relative_layout_side"
+                                                   android:paddingRight="@dimen/padding_login_relative_layout_side"
+>
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/login_title"
+              android:textSize="@dimen/text_size_all_title_medium"
+              android:textColor="@color/colorTextLight"
+              android:id="@+id/text_register_title"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_marginTop="0dp" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginLeft="0dp" android:layout_marginStart="0dp"/>
+
+    <fragment
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:name="com.trainingdeveloperpro.androidk001.lesson4linh.LoginFragment" android:id="@+id/fragment"
+            android:layout_marginTop="@dimen/padding_all_button_sides"
+            app:layout_constraintTop_toBottomOf="@+id/text_register_title" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="@string/login_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/button_login_submit" android:layout_marginTop="@dimen/margin_all_blocks"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/fragment" android:onClick="login"/>
+
+    <Button android:layout_width="@dimen/size_all_circle_button"
+            android:layout_height="@dimen/size_all_circle_button"
+            android:id="@+id/button_login_create_account"
+            android:background="@drawable/button_style_circle"
+            android:text="@string/login_button_create_account_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_login_create_account_button"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_login_create_account_button_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:onClick="createAccount"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
