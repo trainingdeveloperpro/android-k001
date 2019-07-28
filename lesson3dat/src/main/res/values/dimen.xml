@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">50dp</dimen>
+    <dimen name="screen_login_size">100sp</dimen>
+    <dimen name="edit_text_user_password_size">25sp</dimen>
+    <dimen name="edit_text_user_margin_top">180</dimen>
+    <dimen name="button_login_size">50sp</dimen>
+    <dimen name="button_login_margin_top">50dp</dimen>
+    <dimen name="create_account_size">20sp</dimen>
+    <dimen name="button_create_account_size">20sp</dimen>
+    <dimen name="create_account_margin_top">100dp</dimen>
+    <dimen name="create_account_margin_left_start">20dp</dimen>
+    <dimen name="button_create_account_height">27dp</dimen>
+</resources>
