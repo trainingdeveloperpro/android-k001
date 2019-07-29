@@ -8,7 +8,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.0"
     defaultConfig {
-        applicationId "com.trainingdeveloperpro.androidk001"
+        applicationId "com.trainingdeveloperpro.androidk001.lesson4.nguyenquockhanh"
         minSdkVersion 15
         targetSdkVersion 29
         versionCode 1

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="padding">50dp</dimen>
-    <dimen name="screen_login_size">64sp</dimen>
-    <dimen name="button_create_account_size">10sp</dimen>
-</resources>

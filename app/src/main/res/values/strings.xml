@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">AndroidK001</string>
+    <string name="app_name">LinearLogin</string>
+    <string name="text_login">LOGIN</string>
+    <string name="text_email">Email</string>
+    <string name="text_pass">Password</string>
+    <string name="text_first">"Don't have an account ?<b>Sign Up</b></string>
+    <string name="text_signUp">REGISTER</string>
+    <string name="text_firstName">First Name</string>
+    <string name="text_lastName">Last Name</string>
+    <string name="text_register">CREATE ACCOUNT</string>
 </resources>
