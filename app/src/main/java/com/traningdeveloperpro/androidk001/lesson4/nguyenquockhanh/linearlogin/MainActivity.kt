@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun signUp(view : View){
-        val edit_text_email = findViewById<EditText>(R.id.edit_text_email)
-        val mail = edit_text_email.text.toString()
-        val edit_text_pass = findViewById<EditText>(R.id.edit_text_pass).text
-        val pass = edit_text_pass.toString()
+        val editTextEmail = findViewById<EditText>(R.id.edit_text_email)
+        val mail = editTextEmail.text.toString()
+        val editTextPass = findViewById<EditText>(R.id.edit_text_password).text
+        val pass = editTextPass.toString()
         val intent = Intent(this, SignUp::class.java).apply {
             putExtra(Mail, mail)
             putExtra(Pass, pass)

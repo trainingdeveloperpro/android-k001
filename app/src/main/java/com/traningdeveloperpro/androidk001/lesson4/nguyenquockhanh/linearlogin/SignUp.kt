@@ -3,7 +3,6 @@ package com.traningdeveloperpro.androidk001.lesson4.nguyenquockhanh.linearlogin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
-import kotlinx.android.synthetic.main.activity_sign_up.view.*
 
 class SignUp : AppCompatActivity() {
 
@@ -14,10 +13,10 @@ class SignUp : AppCompatActivity() {
         val mail = intent.getStringExtra(Mail)
         val pass = intent.getStringExtra(Pass)
 
-        val register_mail = findViewById<EditText>(R.id.edit_text_register_mail)
-            register_mail.setText(mail)
+        val registerMail = findViewById<EditText>(R.id.edit_text_register_mail)
+            registerMail.setText(mail)
 
-        val register_pass = findViewById<EditText>(R.id.edit_text_register_pass)
-            register_pass.setText(pass)
+        val registerPassword = findViewById<EditText>(R.id.edit_text_register_password)
+            registerPassword.setText(pass)
     }
 }
