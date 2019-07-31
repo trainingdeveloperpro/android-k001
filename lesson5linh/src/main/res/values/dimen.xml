@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <!--Margin-->
+    <dimen name="margin_student_card">4dp</dimen>
+    <dimen name="margin_fragment_student_list">8dp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_student_card_layout">8dp</dimen>
+
+    <!--Text Size-->
+    <dimen name="text_size_student_card_name">16sp</dimen>
+    <dimen name="text_size_student_card_age">10sp</dimen>
+    <dimen name="text_size_student_card_phone">10sp</dimen>
+
+    <!--Width-->
+    <dimen name="width_student_card_image">60dp</dimen>
+</resources>
