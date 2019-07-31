@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_login_margin_top"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_login"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="@dimen/magin_top_email"
+        android:textColor="#ffffff"
+        android:theme="@style/theme" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textEmail"
+        android:text="E-mail"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_email_password"
+        android:layout_marginTop="@dimen/magin_top_Email"
+        android:layout_below="@+id/login"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPassword"
+        android:text="Password"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_email_password"
+        android:layout_marginTop="@dimen/magin_top_Email"
+        android:layout_below="@+id/email"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="@dimen/magin_top_email"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:theme="@style/theme" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/magin_top_btnlogin"
+        android:background="@drawable/bgfb"
+        android:onClick="login"
+        android:paddingHorizontal="10dp"
+        android:text="Log in"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="@dimen/pic_width"
+        android:layout_height="@dimen/pic_height"
+        android:background="@drawable/logotrang"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="@dimen/shape_btncong"
+        android:layout_height="@dimen/shape_btncong"
+        android:layout_alignStart="@+id/login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="213dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/button_style_cricle"
+        android:onClick="register"
+        android:text="+"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_btncong" />
+
+
+</RelativeLayout>
