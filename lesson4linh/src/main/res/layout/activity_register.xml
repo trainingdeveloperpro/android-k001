@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/padding_login_relative_layout_side"
+              android:paddingRight="@dimen/padding_login_relative_layout_side"
+              android:paddingTop="@dimen/padding_login_relative_layout_top"
+              android:background="@color/colorAccent"
+              android:orientation="vertical"
+>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/register_title"
+              android:textSize="@dimen/text_size_all_title_medium"
+              android:textColor="@color/colorTextLight"
+              android:id="@+id/text_register_title"
+              android:layout_marginBottom="@dimen/margin_all_blocks"/>
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.trainingdeveloperpro.androidk001.lesson4linh.NameFragment" android:id="@+id/fragment3"
+    />
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.trainingdeveloperpro.androidk001.lesson4linh.LoginFragment" android:id="@+id/fragment4"
+            android:layout_marginBottom="@dimen/margin_all_blocks"
+    />
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register_submit"
+            android:text="@string/register_button_create_account"
+            android:layout_below="@id/edittext_register_password"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:onClick="register"
+            android:layout_gravity="center_horizontal"
+    />
+</LinearLayout>
