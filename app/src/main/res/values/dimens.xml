@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="absoluteXY">8dp</dimen>
+    <dimen name="recycler_width">200dp</dimen>
+    <dimen name="recycler_space">1dp</dimen>
+    <dimen name="padding_right">20dp</dimen>
+</resources>
