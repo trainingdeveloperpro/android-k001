@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                   android:layout_width="match_parent"
-                                   android:layout_height="wrap_content"
-                                   android:padding="@dimen/padding_student_card_layout"
-                                   android:layout_margin="@dimen/margin_student_card"
->
-    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
-                                                       android:layout_height="wrap_content"
-                                                       android:background="@drawable/all_student_card">
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_student_card_layout"
+        android:layout_margin="@dimen/margin_student_card">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_student_card">
 
         <TextView
-                android:text="TextView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/text_view_student_name"
-                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
-                android:textSize="@dimen/text_size_student_card_name" android:textStyle="bold"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_student_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin_student_card_text_view__name_end"
+                android:layout_marginRight="@dimen/margin_student_card_text_view_name_right"
+                android:layout_marginTop="@dimen/margin_student_card_text_view_name_top"
+                android:textSize="@dimen/text_size_student_card_name"
+                android:textStyle="bold"/>
         <TextView
-                android:text="TextView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/text_view_student_age"
-                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_student_age"
+                android:layout_marginTop="@dimen/margin_student_card_text_view_name_top"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_student_name"
                 app:layout_constraintEnd_toEndOf="@+id/text_view_student_name"
                 android:textStyle="italic"/>
         <ImageView
                 android:layout_width="@dimen/width_student_card_image"
-                android:layout_height="0dp"
-                android:id="@+id/image_student" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/picture_avatar_placeholder"
-                android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginTop="16dp" android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                android:layout_height="@dimen/height_student_card_image"
+                android:id="@+id/image_student"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/picture_avatar_placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/margin_student_card_image_bottom"
+                android:layout_marginTop="@dimen/margin_student_card_image_top"
+                android:layout_marginLeft="@dimen/margin_student_card_image_left"
+                android:layout_marginStart="@dimen/margin_student_card_image_start"
                 android:scaleType="fitCenter"/>
         <TextView
-                android:text="TextView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/text_view_student_phone"
-                app:layout_constraintEnd_toEndOf="@+id/text_view_student_age" android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_view_student_phone"
+                app:layout_constraintEnd_toEndOf="@+id/text_view_student_age"
+                android:layout_marginTop="@dimen/margin_student_card_text_view_phone_top"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_student_age"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
