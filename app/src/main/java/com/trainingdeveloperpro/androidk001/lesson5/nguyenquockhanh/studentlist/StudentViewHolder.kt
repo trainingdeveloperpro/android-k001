@@ -8,21 +8,21 @@ import androidx.recyclerview.widget.RecyclerView
 
 class StudentViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     RecyclerView.ViewHolder(inflater.inflate(R.layout.recycler_view, parent, false)) {
-    private var mName: TextView? = null
-    private var mAge: TextView? = null
-    private var mTelephone: TextView? = null
+    private var userName: TextView? = null
+    private var userAge: TextView? = null
+    private var userTelephone: TextView? = null
     var buttonDelete: ImageButton? = null
 
     init {
-        mName = itemView.findViewById(R.id.user_name)
-        mAge = itemView.findViewById(R.id.user_age)
-        mTelephone = itemView.findViewById(R.id.user_telephone)
+        userName = itemView.findViewById(R.id.user_name)
+        userAge = itemView.findViewById(R.id.user_age)
+        userTelephone = itemView.findViewById(R.id.user_telephone)
         buttonDelete = itemView.findViewById(R.id.button_delete)
     }
 
     fun bind(student: Student) {
-        mName?.text = student.name
-        mAge?.text = student.age
-        mTelephone?.text = student.telephone
+        userName?.text = student.name
+        userAge?.text = student.age
+        userTelephone?.text = student.telephone
     }
 }

@@ -7,11 +7,9 @@
         tools:context=".MainActivity"
         android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/my_recycler_view"
+    <fragment
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteY="@dimen/absoluteXY"
-            tools:layout_editor_absoluteX="@dimen/absoluteXY"/>
-
+            android:name="com.trainingdeveloperpro.androidk001.lesson5.nguyenquockhanh.studentlist.StudentListFragment"
+            android:id="@+id/fragment"/>
 </LinearLayout>
