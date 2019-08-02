@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_margin"
+                tools:context=".MainActivity" >
+
+    <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/screen_login"
+            android:textSize="@dimen/tv_login_size" />
+
+    <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:text="@string/screen_user" />
+
+    <EditText
+            android:id="@+id/et_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user"
+            android:inputType="text"/>
+
+
+    <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_user"
+            android:text="@string/screen_password" />
+
+    <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_password"
+            android:inputType="textPassword"/>
+
+    <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_pass"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:onClick="login"
+            android:text="@string/screen_login" />
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:text="@string/screen_not_have_account"
+            android:layout_marginLeft="@dimen/marginLeft1"
+            android:layout_marginStart="@dimen/marginLeft1"
+            android:id="@+id/tv_sign_up"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:textAllCaps="false"
+            android:id="@+id/next_activity"
+            android:text="@string/screen_sign_up"
+            android:background="@color/white"
+            android:layout_below="@id/btn_login"
+            android:layout_marginLeft="@dimen/marginLeft3"
+            android:layout_marginStart="@dimen/marginLeft3"
+            android:onClick="createAccount"/>
+
+</RelativeLayout>
