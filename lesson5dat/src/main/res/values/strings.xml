@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StudentManager</string>
+    <string name="main_activity_delete_entry_button_text">Delete</string>
+</resources>
