@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">30dp</dimen>
+    <dimen name="tv_login_size">25sp</dimen>
+    <dimen name="marginLeft">20dp</dimen>
+    <dimen name="marginLeft1">40dp</dimen>
+    <dimen name="marginLeft2">201dp</dimen>
+    <dimen name="marginLeft3">189dp</dimen>
+    <dimen name="btn_height">20dp</dimen>
+    <dimen name="marginTop">350dp</dimen>
+</resources>
