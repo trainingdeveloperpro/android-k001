@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -49,6 +50,14 @@ class StudentListFragment : Fragment() {
         buttonAdd.setOnClickListener {
             val intent = Intent(activity, AddNew::class.java)
             startActivityForResult(intent, ACTIVITY_REQUEST_CODE)
+        }
+
+        val buttonSort = rootView.findViewById<ImageButton>(R.id.button_sort)
+        buttonSort.setOnClickListener {
+            val newStudentList = ArrayList<Student>()
+            newStudentList.addAll(studentList)
+            newStudentList.sortBy { it.name }
+            viewAdapter.updateItems(newStudentList)
         }
         return rootView
     }
