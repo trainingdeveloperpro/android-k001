@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">AndroidK001</string>
+    <string name="app_name">lesson5khang</string>
+    <string name="main_activity_delete_entry_button_text">Delete</string>
 </resources>
