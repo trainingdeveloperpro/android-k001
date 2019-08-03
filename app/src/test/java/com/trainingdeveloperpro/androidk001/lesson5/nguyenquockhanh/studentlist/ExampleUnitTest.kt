@@ -1,4 +1,4 @@
-package com.trainingdeveloperpro.androidk001
+package com.trainingdeveloperpro.androidk001.lesson5.nguyenquockhanh.studentlist
 
 import org.junit.Test
 

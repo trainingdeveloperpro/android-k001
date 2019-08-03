@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.trainingdeveloperpro.androidk001.lesson5.nguyenquockhanh.studentlist.AddNew">
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.trainingdeveloperpro.androidk001.lesson5.nguyenquockhanh.studentlist.AddFragment"
+            tools:layout_editor_absoluteY="16dp" tools:layout_editor_absoluteX="16dp" android:id="@+id/fragment2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
