@@ -1,4 +1,4 @@
-package com.trainingdeveloperpro.androidk001.lesson6linh
+package com.trainingdeveloperpro.androidk001.studentmanager
 
 import android.app.Activity
 import android.content.Intent
@@ -14,13 +14,14 @@ import androidx.recyclerview.selection.StableIdKeyProvider
 import androidx.recyclerview.selection.StorageStrategy
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.trainingdeveloperpro.androidk001.lesson6linh.*
 
 private const val GRID_LAYOUT_SPAN_COUNT = 2
 private const val CREATE_STUDENT_REQUEST = 1
 
-const val EXTRA_STUDENT_NAME = "com.trainingdeveloperpro.androidk001.lesson6linh.STUDENT_NAME"
-const val EXTRA_STUDENT_AGE = "com.trainingdeveloperpro.androidk001.lesson6linh.STUDENT_AGE"
-const val EXTRA_STUDENT_PHONE = "com.trainingdeveloperpro.androidk001.lesson6linh.STUDENT_PHONE"
+const val EXTRA_STUDENT_NAME = "com.trainingdeveloperpro.androidk001.studentmanager.STUDENT_NAME"
+const val EXTRA_STUDENT_AGE = "com.trainingdeveloperpro.androidk001.studentmanager.STUDENT_AGE"
+const val EXTRA_STUDENT_PHONE = "com.trainingdeveloperpro.androidk001.studentmanager.STUDENT_PHONE"
 
 const val BUNDLE_STATE_STUDENTS = "STUDENTS"
 
@@ -52,7 +53,7 @@ class StudentListFragment : Fragment() {
             .setOnClickListener { addStudentCard() }
 
         rootView.findViewById<Button>(R.id.button_student_list_sort)
-            .setOnClickListener { sortStudentList() }
+            .setOnClickListener { onClickButtonSort() }
     }
 
     private fun createRecyclerView(rootView: View, savedState: Bundle?): RecyclerView {
@@ -152,12 +153,10 @@ class StudentListFragment : Fragment() {
         }
     }
 
-    private fun sortStudentList() {
-        val sortedStudentList = ArrayList<Student>()
-        sortedStudentList.addAll(students)
+    private fun sortStudentListByName(): ArrayList<Student> = ArrayList(students.sortedBy { it.name })
 
-        sortedStudentList.sortBy { it.name }
-
-        viewAdapter.updateList(sortedStudentList)
+    private fun onClickButtonSort() {
+        val sortedList = sortStudentListByName()
+        viewAdapter.updateList(sortedList)
     }
 }
