@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_width_height_user">60dp</dimen>
+
+    <dimen name="paddingTop_Bottom_cardView">1dp</dimen>
+    <dimen name="paddingLeft_Linear_Item">5dp</dimen>
+
+    <dimen name="textSize_name">16sp</dimen>
+    <dimen name="textSize_age_phone">14sp</dimen>
+
+</resources>
