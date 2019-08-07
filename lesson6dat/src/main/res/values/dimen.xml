@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <!--Margin-->
+    <dimen name="margin_student_card">4dp</dimen>
+    <dimen name="margin_fragment_student_list">8dp</dimen>
+    <dimen name="margin_fragment_student_list_recycler_view_bottom">8dp</dimen>
+    <dimen name="margin_fragment_student_list_button_add_bottom">8dp</dimen>
+    <dimen name="margin_student_card_text_view__name_end">8dp</dimen>
+    <dimen name="margin_student_card_text_view_name_right">8dp</dimen>
+    <dimen name="margin_student_card_text_view_name_top">8dp</dimen>
+    <dimen name="margin_student_card_text_view_age_top">8dp</dimen>
+    <dimen name="margin_student_card_image_bottom">16dp</dimen>
+    <dimen name="margin_student_card_image_top">16dp</dimen>
+    <dimen name="margin_student_card_image_left">8dp</dimen>
+    <dimen name="margin_student_card_image_start">8dp</dimen>
+    <dimen name="margin_student_card_text_view_phone_top">8dp</dimen>
+    <dimen name="margin_fragment_create_student_card_layout">8dp</dimen>
+    <dimen name="margin_fragment_create_student_card_all_edit_text_top">8dp</dimen>
+    <dimen name="margin_fragment_create_student_card_all_text_view_top">8dp</dimen>
+    <dimen name="margin_fragment_create_student_card_all_image_button_top">8dp</dimen>
+    <dimen name="margin_fragment_create_student_card_all_button_top">8dp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_student_card_layout">8dp</dimen>
+
+    <!--Text Size-->
+    <dimen name="text_size_student_card_name">16sp</dimen>
+    <dimen name="text_size_student_card_age">10sp</dimen>
+    <dimen name="text_size_student_card_phone">10sp</dimen>
+    <dimen name="text_size_all_fragment_title">20sp</dimen>
+
+    <!--Width-->
+    <dimen name="width_student_card_image">60dp</dimen>
+    <dimen name="width_fragment_student_list_layout">0dp</dimen>
+    <dimen name="width_fragment_create_student_card_layout">0dp</dimen>
+    <dimen name="width_fragment_create_student_card_image">100dp</dimen>
+
+    <!--Height-->
+    <dimen name="height_student_card_image">0dp</dimen>
+    <dimen name="height_fragment_student_list_layout">0dp</dimen>
+    <dimen name="height_fragment_create_student_card_layout">0dp</dimen>
+    <dimen name="height_fragment_create_student_card_image">100dp</dimen>
+
+
+    <dimen name="match_constraint">0dp</dimen>
+</resources>
