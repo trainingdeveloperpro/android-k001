@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_width_height_user">60dp</dimen>
+    <dimen name="layout_margin_left_information">5dp</dimen>
+    <dimen name="layout_margin_bottom_btnSort_btnAdd">10dp</dimen>
+    <dimen name="layout_margin_left_btnAdd">220dp</dimen>
+    <dimen name="layout_top">2dp</dimen>
+
+    <dimen name="textSize_name">20sp</dimen>
+    <dimen name="textSize_age_phone">15sp</dimen>
+
+
+</resources>
