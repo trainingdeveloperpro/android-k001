@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">StudentManager</string>
+    <string name="action_settings">Settings</string>
+
+    <!--student_list_fragment-->
+    <string name="student_list_fragment_delete_entry_button_text">Delete</string>
+    <string name="student_list_fragment_add_entry_button_text">Add</string>
+    <string name="student_list_fragment_sort_entries_button">Sort</string>
+    <string name="_create_student">CreateStudentActivity</string>
+
+    <!--create_student_card-->
+    <string name="create_student_card_fragment_title">Create new student</string>
+    <string name="create_student_card_fragment_text_view_name_label">Name</string>
+    <string name="create_student_card_fragment_text_view_age_label">Age</string>
+    <string name="create_student_card_fragment_text_view_phone_label">Phone Number</string>
+    <string name="create_student_card_fragment_button_submit">Create</string>
+
+</resources>
