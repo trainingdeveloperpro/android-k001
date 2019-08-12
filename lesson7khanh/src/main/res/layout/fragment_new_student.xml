@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".NewStudentFragment">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_size_big"
+            android:textColor="@android:color/black"
+    />
+
+    <EditText
+            android:layout_width="@dimen/recycler_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/small_space"
+            android:id="@+id/edit_text_register_name"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+    />
+
+    <EditText
+            android:layout_width="@dimen/recycler_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/small_space"
+            android:id="@+id/edit_text_register_age"
+            android:hint="@string/age"
+            android:inputType="number"
+    />
+
+    <EditText
+            android:layout_width="@dimen/recycler_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/small_space"
+            android:id="@+id/edit_text_register_telephone"
+            android:hint="@string/telephone"
+            android:inputType="phone"
+    />
+
+    <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/small_space"
+            android:text="@string/add_button"
+    />
+</LinearLayout>

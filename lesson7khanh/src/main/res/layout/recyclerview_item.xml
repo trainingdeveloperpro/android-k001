@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="@dimen/recycler_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginTop="@dimen/recycler_space"
+                android:layout_marginLeft="@dimen/recycler_space"
+                android:layout_marginStart="@dimen/recycler_space">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_image"
+            android:background="@mipmap/ic_launcher_round"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@id/user_image"
+            android:layout_toEndOf="@id/user_image"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_age"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/padding_right"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_telephone"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/user_name"
+            android:layout_toRightOf="@id/user_image"
+    />
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_delete"
+            android:background="@android:drawable/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/user_image"
+    />
+</RelativeLayout>
