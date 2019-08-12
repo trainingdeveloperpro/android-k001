@@ -13,9 +13,7 @@ class StudentsListAdapter :
     RecyclerView.Adapter<StudentsListAdapter.StudentViewHolder>() {
 
     private val TAG = StudentsListAdapter::class.java.simpleName
-
     private var students = ArrayList<Student>()
-
     var tracker: SelectionTracker<Long>? = null
 
     init {

@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.DiffUtil
 class StudentDiffCallback(private val oldList: ArrayList<Student>, private val newList: ArrayList<Student>) :
     DiffUtil.Callback() {
     private val TAG = StudentDiffCallback::class.java.simpleName
+
     override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
         return oldList[oldItemPosition] === newList[newItemPosition]
     }
