@@ -1,4 +1,4 @@
-package com.trainingdeveloperpro.androidk001
+package com.trainingdeveloperpro.androidk001.lesson5.nguyenquockhanh.studentlist
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.trainingdeveloperpro.androidk001", appContext.packageName)
+        assertEquals("com.traningdeveloperpro.androidk001.lesson5.nguyenquockhanh.studentlist", appContext.packageName)
     }
 }
