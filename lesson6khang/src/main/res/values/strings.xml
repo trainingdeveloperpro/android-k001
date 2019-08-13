@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo App</string>
+    <string name="delete_entry_button_text">Delete</string>
+    <string name="add_entry_button_text">Add</string>
+    <string name="sort_entry_button_text">Sort</string>
+    <string name="add_et_name">Input Name</string>
+    <string name="add_et_age">Input Age</string>
+    <string name="add_et_phoneNumber">Input PhoneNumber</string>
+</resources>

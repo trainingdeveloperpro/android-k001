@@ -1,1 +1,1 @@
-include ':lesson6dat'
+include ':lesson6dat', ':lesson6khang'
