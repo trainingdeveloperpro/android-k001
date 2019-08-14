@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">L7thu2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtName">Name</string>
+    <string name="txtPhone">Phone</string>
+    <string name="txtAge">Age</string>
+    <string name="btnAdd">add</string>
+    <string name="toastAddNoone">Add fail!</string>
+</resources>

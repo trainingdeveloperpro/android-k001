@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="layout_ic_user">60dp</dimen>
+    <dimen name="text_size_txtName">20sp</dimen>
+    <dimen name="text_size_txtAge_txtPhone">14sp</dimen>
+    <dimen name="margin_button_add">10dp</dimen>
+    <dimen name="layout_margin_activity_add_new_student">20dp</dimen>
+    <dimen name="padding_hint_text">7dp</dimen>
+</resources>

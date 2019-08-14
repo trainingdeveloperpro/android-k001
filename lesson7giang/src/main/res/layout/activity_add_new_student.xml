@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/student"
+              tools:context=".AddNewStudent">
+
+    <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtName"
+            android:inputType="text"
+            android:layout_margin="@dimen/layout_margin_activity_add_new_student"
+            android:background="@drawable/shape"
+            android:padding="@dimen/padding_hint_text"
+    />
+    <EditText
+            android:id="@+id/edtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtAge"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/layout_margin_activity_add_new_student"
+            android:layout_marginRight="@dimen/layout_margin_activity_add_new_student"
+            android:background="@drawable/shape"
+            android:padding="@dimen/padding_hint_text"
+    />
+    <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtPhone"
+            android:inputType="number"
+            android:layout_margin="@dimen/layout_margin_activity_add_new_student"
+            android:background="@drawable/shape"
+            android:padding="@dimen/padding_hint_text"
+    />
+    <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAdd"
+            android:layout_gravity="center"
+            android:onClick="addStudent"
+    />
+
+</LinearLayout>
